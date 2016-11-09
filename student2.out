@@ -1,0 +1,2104 @@
+miniSQL> create table student2(id int, name char(20), GPA float, primary key(id))
+Table 'student2' already exists.
+
+miniSQL> insert into student2 values(0, '0', 0)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(1, '1', 0.0002)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(2, '2', 0.0004)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(3, '3', 0.0006)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(4, '4', 0.0008)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(5, '5', 0.001)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(6, '6', 0.0012)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(7, '7', 0.0014)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(8, '8', 0.0016)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(9, '9', 0.0018)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(10, '10', 0.002)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(11, '11', 0.0022)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(12, '12', 0.0024)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(13, '13', 0.0026)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(14, '14', 0.0028)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(15, '15', 0.003)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(16, '16', 0.0032)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(17, '17', 0.0034)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(18, '18', 0.0036)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(19, '19', 0.0038)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(20, '20', 0.004)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(21, '21', 0.0042)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(22, '22', 0.0044)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(23, '23', 0.0046)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(24, '24', 0.0048)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(25, '25', 0.005)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(26, '26', 0.0052)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(27, '27', 0.0054)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(28, '28', 0.0056)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(29, '29', 0.0058)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(30, '30', 0.006)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(31, '31', 0.0062)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(32, '32', 0.0064)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(33, '33', 0.0066)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(34, '34', 0.0068)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(35, '35', 0.007)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(36, '36', 0.0072)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(37, '37', 0.0074)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(38, '38', 0.0076)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(39, '39', 0.0078)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(40, '40', 0.008)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(41, '41', 0.0082)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(42, '42', 0.0084)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(43, '43', 0.0086)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(44, '44', 0.0088)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(45, '45', 0.009)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(46, '46', 0.0092)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(47, '47', 0.0094)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(48, '48', 0.0096)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(49, '49', 0.0098)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(50, '50', 0.01)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(51, '51', 0.0102)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(52, '52', 0.0104)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(53, '53', 0.0106)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(54, '54', 0.0108)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(55, '55', 0.011)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(56, '56', 0.0112)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(57, '57', 0.0114)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(58, '58', 0.0116)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(59, '59', 0.0118)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(60, '60', 0.012)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(61, '61', 0.0122)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(62, '62', 0.0124)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(63, '63', 0.0126)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(64, '64', 0.0128)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(65, '65', 0.013)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(66, '66', 0.0132)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(67, '67', 0.0134)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(68, '68', 0.0136)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(69, '69', 0.0138)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(70, '70', 0.014)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(71, '71', 0.0142)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(72, '72', 0.0144)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(73, '73', 0.0146)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(74, '74', 0.0148)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(75, '75', 0.015)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(76, '76', 0.0152)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(77, '77', 0.0154)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(78, '78', 0.0156)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(79, '79', 0.0158)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(80, '80', 0.016)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(81, '81', 0.0162)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(82, '82', 0.0164)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(83, '83', 0.0166)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(84, '84', 0.0168)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(85, '85', 0.017)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(86, '86', 0.0172)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(87, '87', 0.0174)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(88, '88', 0.0176)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(89, '89', 0.0178)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(90, '90', 0.018)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(91, '91', 0.0182)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(92, '92', 0.0184)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(93, '93', 0.0186)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(94, '94', 0.0188)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(95, '95', 0.019)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(96, '96', 0.0192)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(97, '97', 0.0194)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(98, '98', 0.0196)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(99, '99', 0.0198)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(100, '100', 0.02)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(101, '101', 0.0202)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(102, '102', 0.0204)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(103, '103', 0.0206)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(104, '104', 0.0208)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(105, '105', 0.021)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(106, '106', 0.0212)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(107, '107', 0.0214)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(108, '108', 0.0216)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(109, '109', 0.0218)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(110, '110', 0.022)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(111, '111', 0.0222)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(112, '112', 0.0224)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(113, '113', 0.0226)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(114, '114', 0.0228)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(115, '115', 0.023)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(116, '116', 0.0232)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(117, '117', 0.0234)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(118, '118', 0.0236)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(119, '119', 0.0238)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(120, '120', 0.024)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(121, '121', 0.0242)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(122, '122', 0.0244)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(123, '123', 0.0246)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(124, '124', 0.0248)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(125, '125', 0.025)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(126, '126', 0.0252)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(127, '127', 0.0254)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(128, '128', 0.0256)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(129, '129', 0.0258)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(130, '130', 0.026)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(131, '131', 0.0262)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(132, '132', 0.0264)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(133, '133', 0.0266)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(134, '134', 0.0268)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(135, '135', 0.027)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(136, '136', 0.0272)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(137, '137', 0.0274)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(138, '138', 0.0276)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(139, '139', 0.0278)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(140, '140', 0.028)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(141, '141', 0.0282)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(142, '142', 0.0284)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(143, '143', 0.0286)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(144, '144', 0.0288)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(145, '145', 0.029)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(146, '146', 0.0292)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(147, '147', 0.0294)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(148, '148', 0.0296)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(149, '149', 0.0298)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(150, '150', 0.03)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(151, '151', 0.0302)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(152, '152', 0.0304)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(153, '153', 0.0306)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(154, '154', 0.0308)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(155, '155', 0.031)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(156, '156', 0.0312)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(157, '157', 0.0314)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(158, '158', 0.0316)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(159, '159', 0.0318)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(160, '160', 0.032)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(161, '161', 0.0322)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(162, '162', 0.0324)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(163, '163', 0.0326)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(164, '164', 0.0328)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(165, '165', 0.033)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(166, '166', 0.0332)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(167, '167', 0.0334)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(168, '168', 0.0336)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(169, '169', 0.0338)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(170, '170', 0.034)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(171, '171', 0.0342)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(172, '172', 0.0344)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(173, '173', 0.0346)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(174, '174', 0.0348)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(175, '175', 0.035)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(176, '176', 0.0352)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(177, '177', 0.0354)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(178, '178', 0.0356)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(179, '179', 0.0358)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(180, '180', 0.036)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(181, '181', 0.0362)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(182, '182', 0.0364)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(183, '183', 0.0366)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(184, '184', 0.0368)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(185, '185', 0.037)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(186, '186', 0.0372)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(187, '187', 0.0374)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(188, '188', 0.0376)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(189, '189', 0.0378)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(190, '190', 0.038)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(191, '191', 0.0382)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(192, '192', 0.0384)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(193, '193', 0.0386)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(194, '194', 0.0388)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(195, '195', 0.039)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(196, '196', 0.0392)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(197, '197', 0.0394)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(198, '198', 0.0396)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(199, '199', 0.0398)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(200, '200', 0.04)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(201, '201', 0.0402)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(202, '202', 0.0404)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(203, '203', 0.0406)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(204, '204', 0.0408)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(205, '205', 0.041)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(206, '206', 0.0412)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(207, '207', 0.0414)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(208, '208', 0.0416)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(209, '209', 0.0418)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(210, '210', 0.042)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(211, '211', 0.0422)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(212, '212', 0.0424)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(213, '213', 0.0426)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(214, '214', 0.0428)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(215, '215', 0.043)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(216, '216', 0.0432)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(217, '217', 0.0434)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(218, '218', 0.0436)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(219, '219', 0.0438)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(220, '220', 0.044)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(221, '221', 0.0442)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(222, '222', 0.0444)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(223, '223', 0.0446)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(224, '224', 0.0448)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(225, '225', 0.045)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(226, '226', 0.0452)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(227, '227', 0.0454)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(228, '228', 0.0456)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(229, '229', 0.0458)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(230, '230', 0.046)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(231, '231', 0.0462)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(232, '232', 0.0464)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(233, '233', 0.0466)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(234, '234', 0.0468)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(235, '235', 0.047)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(236, '236', 0.0472)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(237, '237', 0.0474)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(238, '238', 0.0476)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(239, '239', 0.0478)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(240, '240', 0.048)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(241, '241', 0.0482)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(242, '242', 0.0484)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(243, '243', 0.0486)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(244, '244', 0.0488)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(245, '245', 0.049)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(246, '246', 0.0492)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(247, '247', 0.0494)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(248, '248', 0.0496)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(249, '249', 0.0498)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(250, '250', 0.05)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(251, '251', 0.0502)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(252, '252', 0.0504)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(253, '253', 0.0506)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(254, '254', 0.0508)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(255, '255', 0.051)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(256, '256', 0.0512)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(257, '257', 0.0514)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(258, '258', 0.0516)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(259, '259', 0.0518)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(260, '260', 0.052)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(261, '261', 0.0522)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(262, '262', 0.0524)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(263, '263', 0.0526)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(264, '264', 0.0528)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(265, '265', 0.053)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(266, '266', 0.0532)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(267, '267', 0.0534)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(268, '268', 0.0536)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(269, '269', 0.0538)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(270, '270', 0.054)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(271, '271', 0.0542)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(272, '272', 0.0544)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(273, '273', 0.0546)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(274, '274', 0.0548)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(275, '275', 0.055)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(276, '276', 0.0552)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(277, '277', 0.0554)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(278, '278', 0.0556)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(279, '279', 0.0558)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(280, '280', 0.056)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(281, '281', 0.0562)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(282, '282', 0.0564)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(283, '283', 0.0566)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(284, '284', 0.0568)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(285, '285', 0.057)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(286, '286', 0.0572)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(287, '287', 0.0574)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(288, '288', 0.0576)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(289, '289', 0.0578)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(290, '290', 0.058)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(291, '291', 0.0582)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(292, '292', 0.0584)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(293, '293', 0.0586)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(294, '294', 0.0588)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(295, '295', 0.059)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(296, '296', 0.0592)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(297, '297', 0.0594)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(298, '298', 0.0596)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(299, '299', 0.0598)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(300, '300', 0.06)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(301, '301', 0.0602)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(302, '302', 0.0604)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(303, '303', 0.0606)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(304, '304', 0.0608)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(305, '305', 0.061)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(306, '306', 0.0612)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(307, '307', 0.0614)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(308, '308', 0.0616)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(309, '309', 0.0618)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(310, '310', 0.062)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(311, '311', 0.0622)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(312, '312', 0.0624)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(313, '313', 0.0626)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(314, '314', 0.0628)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(315, '315', 0.063)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(316, '316', 0.0632)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(317, '317', 0.0634)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(318, '318', 0.0636)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(319, '319', 0.0638)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(320, '320', 0.064)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(321, '321', 0.0642)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(322, '322', 0.0644)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(323, '323', 0.0646)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(324, '324', 0.0648)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(325, '325', 0.065)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(326, '326', 0.0652)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(327, '327', 0.0654)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(328, '328', 0.0656)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(329, '329', 0.0658)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(330, '330', 0.066)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(331, '331', 0.0662)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(332, '332', 0.0664)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(333, '333', 0.0666)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(334, '334', 0.0668)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(335, '335', 0.067)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(336, '336', 0.0672)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(337, '337', 0.0674)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(338, '338', 0.0676)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(339, '339', 0.0678)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(340, '340', 0.068)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(341, '341', 0.0682)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(342, '342', 0.0684)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(343, '343', 0.0686)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(344, '344', 0.0688)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(345, '345', 0.069)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(346, '346', 0.0692)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(347, '347', 0.0694)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(348, '348', 0.0696)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(349, '349', 0.0698)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(350, '350', 0.07)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(351, '351', 0.0702)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(352, '352', 0.0704)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(353, '353', 0.0706)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(354, '354', 0.0708)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(355, '355', 0.071)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(356, '356', 0.0712)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(357, '357', 0.0714)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(358, '358', 0.0716)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(359, '359', 0.0718)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(360, '360', 0.072)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(361, '361', 0.0722)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(362, '362', 0.0724)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(363, '363', 0.0726)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(364, '364', 0.0728)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(365, '365', 0.073)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(366, '366', 0.0732)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(367, '367', 0.0734)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(368, '368', 0.0736)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(369, '369', 0.0738)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(370, '370', 0.074)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(371, '371', 0.0742)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(372, '372', 0.0744)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(373, '373', 0.0746)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(374, '374', 0.0748)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(375, '375', 0.075)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(376, '376', 0.0752)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(377, '377', 0.0754)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(378, '378', 0.0756)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(379, '379', 0.0758)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(380, '380', 0.076)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(381, '381', 0.0762)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(382, '382', 0.0764)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(383, '383', 0.0766)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(384, '384', 0.0768)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(385, '385', 0.077)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(386, '386', 0.0772)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(387, '387', 0.0774)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(388, '388', 0.0776)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(389, '389', 0.0778)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(390, '390', 0.078)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(391, '391', 0.0782)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(392, '392', 0.0784)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(393, '393', 0.0786)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(394, '394', 0.0788)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(395, '395', 0.079)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(396, '396', 0.0792)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(397, '397', 0.0794)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(398, '398', 0.0796)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(399, '399', 0.0798)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(400, '400', 0.08)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(401, '401', 0.0802)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(402, '402', 0.0804)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(403, '403', 0.0806)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(404, '404', 0.0808)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(405, '405', 0.081)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(406, '406', 0.0812)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(407, '407', 0.0814)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(408, '408', 0.0816)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(409, '409', 0.0818)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(410, '410', 0.082)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(411, '411', 0.0822)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(412, '412', 0.0824)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(413, '413', 0.0826)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(414, '414', 0.0828)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(415, '415', 0.083)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(416, '416', 0.0832)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(417, '417', 0.0834)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(418, '418', 0.0836)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(419, '419', 0.0838)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(420, '420', 0.084)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(421, '421', 0.0842)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(422, '422', 0.0844)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(423, '423', 0.0846)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(424, '424', 0.0848)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(425, '425', 0.085)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(426, '426', 0.0852)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(427, '427', 0.0854)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(428, '428', 0.0856)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(429, '429', 0.0858)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(430, '430', 0.086)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(431, '431', 0.0862)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(432, '432', 0.0864)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(433, '433', 0.0866)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(434, '434', 0.0868)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(435, '435', 0.087)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(436, '436', 0.0872)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(437, '437', 0.0874)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(438, '438', 0.0876)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(439, '439', 0.0878)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(440, '440', 0.088)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(441, '441', 0.0882)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(442, '442', 0.0884)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(443, '443', 0.0886)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(444, '444', 0.0888)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(445, '445', 0.089)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(446, '446', 0.0892)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(447, '447', 0.0894)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(448, '448', 0.0896)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(449, '449', 0.0898)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(450, '450', 0.09)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(451, '451', 0.0902)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(452, '452', 0.0904)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(453, '453', 0.0906)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(454, '454', 0.0908)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(455, '455', 0.091)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(456, '456', 0.0912)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(457, '457', 0.0914)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(458, '458', 0.0916)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(459, '459', 0.0918)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(460, '460', 0.092)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(461, '461', 0.0922)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(462, '462', 0.0924)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(463, '463', 0.0926)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(464, '464', 0.0928)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(465, '465', 0.093)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(466, '466', 0.0932)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(467, '467', 0.0934)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(468, '468', 0.0936)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(469, '469', 0.0938)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(470, '470', 0.094)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(471, '471', 0.0942)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(472, '472', 0.0944)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(473, '473', 0.0946)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(474, '474', 0.0948)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(475, '475', 0.095)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(476, '476', 0.0952)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(477, '477', 0.0954)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(478, '478', 0.0956)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(479, '479', 0.0958)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(480, '480', 0.096)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(481, '481', 0.0962)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(482, '482', 0.0964)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(483, '483', 0.0966)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(484, '484', 0.0968)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(485, '485', 0.097)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(486, '486', 0.0972)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(487, '487', 0.0974)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(488, '488', 0.0976)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(489, '489', 0.0978)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(490, '490', 0.098)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(491, '491', 0.0982)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(492, '492', 0.0984)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(493, '493', 0.0986)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(494, '494', 0.0988)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(495, '495', 0.099)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(496, '496', 0.0992)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(497, '497', 0.0994)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(498, '498', 0.0996)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(499, '499', 0.0998)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(500, '500', 0.1)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(501, '501', 0.1002)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(502, '502', 0.1004)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(503, '503', 0.1006)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(504, '504', 0.1008)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(505, '505', 0.101)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(506, '506', 0.1012)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(507, '507', 0.1014)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(508, '508', 0.1016)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(509, '509', 0.1018)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(510, '510', 0.102)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(511, '511', 0.1022)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(512, '512', 0.1024)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(513, '513', 0.1026)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(514, '514', 0.1028)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(515, '515', 0.103)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(516, '516', 0.1032)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(517, '517', 0.1034)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(518, '518', 0.1036)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(519, '519', 0.1038)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(520, '520', 0.104)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(521, '521', 0.1042)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(522, '522', 0.1044)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(523, '523', 0.1046)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(524, '524', 0.1048)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(525, '525', 0.105)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(526, '526', 0.1052)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(527, '527', 0.1054)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(528, '528', 0.1056)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(529, '529', 0.1058)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(530, '530', 0.106)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(531, '531', 0.1062)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(532, '532', 0.1064)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(533, '533', 0.1066)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(534, '534', 0.1068)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(535, '535', 0.107)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(536, '536', 0.1072)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(537, '537', 0.1074)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(538, '538', 0.1076)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(539, '539', 0.1078)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(540, '540', 0.108)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(541, '541', 0.1082)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(542, '542', 0.1084)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(543, '543', 0.1086)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(544, '544', 0.1088)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(545, '545', 0.109)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(546, '546', 0.1092)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(547, '547', 0.1094)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(548, '548', 0.1096)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(549, '549', 0.1098)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(550, '550', 0.11)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(551, '551', 0.1102)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(552, '552', 0.1104)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(553, '553', 0.1106)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(554, '554', 0.1108)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(555, '555', 0.111)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(556, '556', 0.1112)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(557, '557', 0.1114)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(558, '558', 0.1116)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(559, '559', 0.1118)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(560, '560', 0.112)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(561, '561', 0.1122)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(562, '562', 0.1124)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(563, '563', 0.1126)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(564, '564', 0.1128)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(565, '565', 0.113)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(566, '566', 0.1132)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(567, '567', 0.1134)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(568, '568', 0.1136)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(569, '569', 0.1138)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(570, '570', 0.114)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(571, '571', 0.1142)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(572, '572', 0.1144)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(573, '573', 0.1146)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(574, '574', 0.1148)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(575, '575', 0.115)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(576, '576', 0.1152)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(577, '577', 0.1154)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(578, '578', 0.1156)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(579, '579', 0.1158)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(580, '580', 0.116)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(581, '581', 0.1162)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(582, '582', 0.1164)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(583, '583', 0.1166)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(584, '584', 0.1168)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(585, '585', 0.117)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(586, '586', 0.1172)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(587, '587', 0.1174)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(588, '588', 0.1176)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(589, '589', 0.1178)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(590, '590', 0.118)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(591, '591', 0.1182)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(592, '592', 0.1184)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(593, '593', 0.1186)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(594, '594', 0.1188)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(595, '595', 0.119)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(596, '596', 0.1192)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(597, '597', 0.1194)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(598, '598', 0.1196)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(599, '599', 0.1198)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(600, '600', 0.12)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(601, '601', 0.1202)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(602, '602', 0.1204)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(603, '603', 0.1206)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(604, '604', 0.1208)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(605, '605', 0.121)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(606, '606', 0.1212)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(607, '607', 0.1214)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(608, '608', 0.1216)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(609, '609', 0.1218)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(610, '610', 0.122)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(611, '611', 0.1222)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(612, '612', 0.1224)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(613, '613', 0.1226)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(614, '614', 0.1228)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(615, '615', 0.123)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(616, '616', 0.1232)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(617, '617', 0.1234)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(618, '618', 0.1236)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(619, '619', 0.1238)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(620, '620', 0.124)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(621, '621', 0.1242)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(622, '622', 0.1244)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(623, '623', 0.1246)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(624, '624', 0.1248)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(625, '625', 0.125)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(626, '626', 0.1252)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(627, '627', 0.1254)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(628, '628', 0.1256)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(629, '629', 0.1258)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(630, '630', 0.126)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(631, '631', 0.1262)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(632, '632', 0.1264)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(633, '633', 0.1266)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(634, '634', 0.1268)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(635, '635', 0.127)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(636, '636', 0.1272)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(637, '637', 0.1274)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(638, '638', 0.1276)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(639, '639', 0.1278)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(640, '640', 0.128)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(641, '641', 0.1282)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(642, '642', 0.1284)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(643, '643', 0.1286)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(644, '644', 0.1288)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(645, '645', 0.129)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(646, '646', 0.1292)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(647, '647', 0.1294)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(648, '648', 0.1296)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(649, '649', 0.1298)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(650, '650', 0.13)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(651, '651', 0.1302)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(652, '652', 0.1304)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(653, '653', 0.1306)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(654, '654', 0.1308)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(655, '655', 0.131)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(656, '656', 0.1312)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(657, '657', 0.1314)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(658, '658', 0.1316)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(659, '659', 0.1318)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(660, '660', 0.132)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(661, '661', 0.1322)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(662, '662', 0.1324)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(663, '663', 0.1326)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(664, '664', 0.1328)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(665, '665', 0.133)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(666, '666', 0.1332)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(667, '667', 0.1334)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(668, '668', 0.1336)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(669, '669', 0.1338)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(670, '670', 0.134)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(671, '671', 0.1342)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(672, '672', 0.1344)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(673, '673', 0.1346)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(674, '674', 0.1348)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(675, '675', 0.135)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(676, '676', 0.1352)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(677, '677', 0.1354)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(678, '678', 0.1356)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(679, '679', 0.1358)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(680, '680', 0.136)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(681, '681', 0.1362)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(682, '682', 0.1364)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(683, '683', 0.1366)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(684, '684', 0.1368)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(685, '685', 0.137)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(686, '686', 0.1372)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(687, '687', 0.1374)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(688, '688', 0.1376)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(689, '689', 0.1378)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(690, '690', 0.138)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(691, '691', 0.1382)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(692, '692', 0.1384)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(693, '693', 0.1386)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(694, '694', 0.1388)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(695, '695', 0.139)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(696, '696', 0.1392)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(697, '697', 0.1394)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(698, '698', 0.1396)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(699, '699', 0.1398)
+Duplicate values on primary or unique key 'id'.
+
+miniSQL> insert into student2 values(700, '700', 0.14)
