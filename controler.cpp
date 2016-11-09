@@ -22,7 +22,7 @@ void Controler::run()
 				Shell::printResult();                                          // 由Shell打印结果
 			} catch (string e)
 			{
-				Shell::printException( e );                                 // 捕获到异常，输出异常
+				Shell::printException(e);                                 // 捕获到异常，输出异常
 			} catch ( ... )
 			{}
 		}
