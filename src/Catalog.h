@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CATALOG_H_
+#define CATALOG_H_
 
 #include <vector>
 #include <string>
@@ -8,7 +9,7 @@
 
 #include "global.h"
 
-enum TYPE;
+// enum TYPE;
 class Table;
 class Attribute;
 
@@ -66,3 +67,5 @@ inline CatalogMan& CatalogMan::instance()
 	static CatalogMan obj;
 	return obj;
 }
+
+#endif  // CATALOG_H_

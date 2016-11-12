@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BPLUSTREE_H_
+#define BPLUSTREE_H_
 
 #include <iostream>
 #include <fstream>
@@ -8,15 +9,30 @@
 #include <map>
 #include <queue>
 #include <cmath>
+#include <sys/stat.h>
+#include <unistd.h>
 #include "buffer.h"
 #include "global.h"
 
+// ill-formed
+using namespace std;
+
+const static int M_NODE_HEAD_SIZE = 16;
+const static double M_EPS = 0.0000001;
+const static char M_VALID = 1;
+const static char M_LEAF = 2;
+const static int M_HEAD_SIZE = 16;
+const static int M_ROOT_NUM = 0;
+const static int M_VALUE_END = -1;
+
 template<typename KEY>
-class BPlusTree
-{
-public:
+class BPlusTree {
+ private:
+ 	class Node;
+
+ public:
 	// nested class Node
-	class Node; 
+	// class Node;
 	// called by Index::insertIndex
 	void insert(const std::string& key, const int pointer) const;                                          
 	// called by Index::deleteIndex
@@ -49,9 +65,7 @@ private:
 	void onCreateIndex(const std::vector< std::pair<std::string, int> >& info) const; // called by ctor
 	Node fetchRootFromFile() const;
 
-	template<typename T> bool isEqual(const T& a, const T& b) const { return a == b; }
-	template<> bool isEqual<float>(const float& a, const float& b) const { return fabs(a-b)<M_EPS; } // template specialization
-	template<> bool isEqual<std::string>(const std::string& a, const std::string& b) const { return (strcmp(a.c_str(), b.c_str())==0); }
+	bool isEqual(const KEY& a, const KEY& b) const { return a == b; }
 	bool isLastLeaf(const Node& node) const { return (node.m_last == M_ROOT_NUM); }
 	bool hasKey(const Node& node, const KEY& key) const;
 
@@ -137,13 +151,18 @@ private:
 		int m_blockNum;
 	};
 };
-const static int M_NODE_HEAD_SIZE = 16;
-const static double M_EPS = 0.0000001;
-const static char M_VALID = 1;
-const static char M_LEAF = 2;
-const static int M_HEAD_SIZE = 16;
-const static int M_ROOT_NUM = 0;
-const static int M_VALUE_END = -1;
+
+// template specialization
+template<>
+bool BPlusTree<float>::isEqual(const float& a, const float& b) const {
+	return fabs(a-b)<M_EPS;
+}
+
+template<>
+bool BPlusTree<std::string>::isEqual(const std::string& a, const std::string& b)
+    const {
+  return (strcmp(a.c_str(), b.c_str())==0);
+}
 
 template<typename KEY>
 BPlusTree<KEY>::BPlusTree(const std::string& tableName, const Attribute& attr):        
@@ -162,18 +181,10 @@ BPlusTree<KEY>::BPlusTree(const std::string& tableName, const Attribute& attr):
 }
 
 template<typename KEY>
-bool BPlusTree<KEY>::alreadyExistBPlusTree() const
-{
-	ofstream out(m_fileName, ios::in | ios::out | ios::binary );
-	if (out != 0)
-	{
-		out.close();
-		return true;
-	} else
-	{
-		out.close();
-		return false;
-	}
+bool BPlusTree<KEY>::alreadyExistBPlusTree() const {
+	// returnfer to: http://stackoverflow.com/questions/12774207/fastest-way-to-check-if-a-file-exist-using-standard-c-c11-c
+  struct stat buffer;
+  return stat(m_fileName.c_str(), &buffer) == 0;
 }
 
 template<typename KEY>
@@ -458,12 +469,8 @@ int BPlusTree<KEY>::createRightSibling(Node &left, KEY& keyOut) const
 
 
 template<typename KEY>
-void BPlusTree<KEY>::updateChildren(typename const BPlusTree<KEY>::Node& parent) const
-{
-	if(parent.isLeaf())
-	{
-		return ;
-	}
+void BPlusTree<KEY>::updateChildren(const BPlusTree<KEY>::Node& parent) const {
+	if(parent.isLeaf()) return;
 	for(auto it = parent.m_child.begin(); it != parent.m_child.end(); it ++)
 	{
 		Node child = blockToNode(*it);
@@ -474,7 +481,7 @@ void BPlusTree<KEY>::updateChildren(typename const BPlusTree<KEY>::Node& parent)
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::updateChild(typename const BPlusTree<KEY>::Node& parent, Node& child) const
+void BPlusTree<KEY>::updateChild(const BPlusTree<KEY>::Node& parent, Node& child) const
 {
 	child.m_parent = parent.m_blockNum;
 	nodeToBuffer( child );
@@ -509,7 +516,7 @@ void BPlusTree<KEY>::nodeToBuffer(const Node& node) const
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::unpackHead(typename BPlusTree<KEY>::Node& node, const std::string& content) const
+void BPlusTree<KEY>::unpackHead(BPlusTree<KEY>::Node& node, const std::string& content) const
 {
 	assert( (content[0] & M_VALID) != 0 );
 	node.m_valid = content[0] & M_VALID;
@@ -518,7 +525,7 @@ void BPlusTree<KEY>::unpackHead(typename BPlusTree<KEY>::Node& node, const std::
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::unpackBody(typename BPlusTree<KEY>::Node& node, const std::string& content) const
+void BPlusTree<KEY>::unpackBody(BPlusTree<KEY>::Node& node, const std::string& content) const
 {
 	int listSize = fourBytesToInt(content, 5, 9);
 	unpackKey(node, content, listSize);
@@ -549,7 +556,7 @@ void BPlusTree<KEY>::unpackChild(typename BPlusTree<KEY>::Node& node, const std:
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::packHead(typename const BPlusTree<KEY>::Node& node, std::string& strOut) const
+void BPlusTree<KEY>::packHead(const BPlusTree<KEY>::Node& node, std::string& strOut) const
 {
 	strOut[0] = node.m_valid | node.m_leaf;
 	intTo4Bytes(node.m_parent, strOut, 1, 5);
@@ -557,7 +564,7 @@ void BPlusTree<KEY>::packHead(typename const BPlusTree<KEY>::Node& node, std::st
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::packBody(typename const BPlusTree<KEY>::Node& node, std::string& strOut) const
+void BPlusTree<KEY>::packBody(const BPlusTree<KEY>::Node& node, std::string& strOut) const
 {
 	int cur = M_HEAD_SIZE;
 	packKey(node, strOut, cur);
@@ -566,7 +573,7 @@ void BPlusTree<KEY>::packBody(typename const BPlusTree<KEY>::Node& node, std::st
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::packKey(typename const BPlusTree<KEY>::Node& node, std::string& strOut, int &cur) const
+void BPlusTree<KEY>::packKey(const BPlusTree<KEY>::Node& node, std::string& strOut, int &cur) const
 {
 	std::string key;
 	for(auto it = node.m_key.begin(); it != node.m_key.end(); it ++)
@@ -586,7 +593,7 @@ void BPlusTree<KEY>::packKey(typename const BPlusTree<KEY>::Node& node, std::str
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::packChild(typename const BPlusTree<KEY>::Node& node, std::string& ret, int &cur) const
+void BPlusTree<KEY>::packChild(const BPlusTree<KEY>::Node& node, std::string& ret, int &cur) const
 {
 	for(auto itChild = node.m_child.begin(); itChild != node.m_child.end(); itChild ++)
 	{
@@ -802,7 +809,7 @@ typename BPlusTree<KEY>::Node BPlusTree<KEY>::getSibling(const Node& node, const
 }
 
 template<typename KEY>
-bool BPlusTree<KEY>::canMerge(typename const BPlusTree<KEY>::Node& a, const Node& b) const
+bool BPlusTree<KEY>::canMerge(const BPlusTree<KEY>::Node& a, const Node& b) const
 {
 	if( a.isLeaf() )
 	{
@@ -814,7 +821,7 @@ bool BPlusTree<KEY>::canMerge(typename const BPlusTree<KEY>::Node& a, const Node
 } 
 
 template<typename KEY>
-void BPlusTree<KEY>::swap(typename BPlusTree<KEY>:: Node& left, Node& right) const
+void BPlusTree<KEY>::swap(BPlusTree<KEY>:: Node& left, Node& right) const
 {
 	auto tmpKey = left.m_key;
 	auto tmpChild = left.m_child;
@@ -830,7 +837,7 @@ void BPlusTree<KEY>::swap(typename BPlusTree<KEY>:: Node& left, Node& right) con
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::merge(typename BPlusTree<KEY>::Node& left, Node& right, const KEY& midKey) const
+void BPlusTree<KEY>::merge(BPlusTree<KEY>::Node& left, Node& right, const KEY& midKey) const
 {
 	if( left.isLeaf() )
 	{
@@ -846,7 +853,7 @@ void BPlusTree<KEY>::merge(typename BPlusTree<KEY>::Node& left, Node& right, con
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::mergeInLeaf(typename BPlusTree<KEY>::Node& left, Node& right) const
+void BPlusTree<KEY>::mergeInLeaf(BPlusTree<KEY>::Node& left, Node& right) const
 {
 	left.m_key.splice( left.m_key.end(),
 		right.m_key, right.m_key.begin(), right.m_key.end() );
@@ -856,7 +863,7 @@ void BPlusTree<KEY>::mergeInLeaf(typename BPlusTree<KEY>::Node& left, Node& righ
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::mergeInInner(typename BPlusTree<KEY>::Node& left, Node& right, const KEY& midKey) const
+void BPlusTree<KEY>::mergeInInner(BPlusTree<KEY>::Node& left, Node& right, const KEY& midKey) const
 {
 	left.m_key.push_back( midKey );
 	left.m_child.push_back( left.m_last );
@@ -868,7 +875,7 @@ void BPlusTree<KEY>::mergeInInner(typename BPlusTree<KEY>::Node& left, Node& rig
 }
 
 template<typename KEY>
-KEY BPlusTree<KEY>::borrowFromLeft(typename BPlusTree<KEY>::Node& left, Node& right, const KEY& oldMidKey) const
+KEY BPlusTree<KEY>::borrowFromLeft(BPlusTree<KEY>::Node& left, Node& right, const KEY& oldMidKey) const
 {
 //	KEY newMidKey = left.m_key.back();
 	if( left.isLeaf() )
@@ -885,7 +892,7 @@ KEY BPlusTree<KEY>::borrowFromLeft(typename BPlusTree<KEY>::Node& left, Node& ri
 }
 
 template<typename KEY>
-void BPlusTree<KEY>::borrowFromLeft_inLeaf(typename BPlusTree<KEY>::Node& left, Node& right, const KEY& noUse) const
+void BPlusTree<KEY>::borrowFromLeft_inLeaf(BPlusTree<KEY>::Node& left, Node& right, const KEY& noUse) const
 {
 	// ... false here!
 	right.m_key.push_front( left.m_key.back() );	
@@ -1277,3 +1284,5 @@ void BPlusTree<KEY>::printInLeaf(int child) const
 	}
 	std::cout << ")";
 }
+
+#endif  // BPLUSTREE_H_

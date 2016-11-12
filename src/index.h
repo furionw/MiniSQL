@@ -1,10 +1,11 @@
-#pragma once
+#ifndef INDEX_H_
+#define INDEX_H_
 
 #include <vector>
 #include <string>
 #include <map>
 #include "BPlusTreeV5.h"
-#include "../miniSQL/global.h"
+#include "global.h"
 
 //class Table;
 //class Condition;
@@ -63,6 +64,8 @@ void IndexMan::treeRemove(const BPlusTree<KEY>& tree, const std::vector<std::pai
 	}
 //	tree.print();
 }
+
+#endif  // INDEX_H_
 
 // API::createTable
 //	void createIndex(const std::string& tableName, const std::vector<Attribute>& attr) const; 

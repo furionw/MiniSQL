@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GLOBAL_H_
+#define GLOBAL_H_
 
 #include <vector>
 #include <string>
@@ -203,3 +204,5 @@ inline void vtSplice(std::vector<int>& vtOut, const std::vector<int>& tmp)
 		vtOut.push_back( *it );
 	}
 }
+
+#endif  // GLOBAL_H_

@@ -258,7 +258,7 @@ bool BufferMan::File::read(const string& fileName, const int blockNum, char*& ds
 {
 	ifstream in(fileName, ios::binary | fstream::ate);
 
-	if(in == 0)
+	if(!in.good())
 	{
 		File::createFile(fileName);                                            // new added in 13-10-18, for bplustree
 		in.open(fileName, ios::binary | fstream::ate);
@@ -294,13 +294,12 @@ bool BufferMan::File::write(const string& fileName, const string& content, int& 
 {
 	ofstream out(fileName, ios::in | ios::out | ios::binary );
 	                                                                                                                // 写追加到文件尾
-	if( out == 0)
-	{
+	if (!out.good()) {
 		File::createFile(fileName);                                                               // 创建个新文件 : P for bplustree
 		out.open(fileName, ios::in | ios::out | ios::binary );
 	}
 
-	assert( out != 0 );
+	assert(out.good());
 	out.seekp(0, ios_base::end);
 	long end = out.tellp();
 	num = (end / BLOCK_SIZE);                                                                // 将(块)尾号作为传出参数
@@ -316,7 +315,7 @@ bool BufferMan::File::write(const string& fileName, const string& content, int& 
 int BufferMan::File::readLast(const string& fileName, string& strOut)
 {
 	ifstream in(fileName, ios::binary);
-	assert( in != 0 );
+	assert(in.good());
 	in.seekg(-4096, ios_base::end);                                          // BLOCK_SIZE为无符号数，不可使用-BLOCK_SIZE
 	const long target = in.tellg();
 	char dst[BLOCK_SIZE];

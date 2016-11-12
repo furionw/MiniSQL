@@ -1,10 +1,10 @@
-#pragma once
+#ifndef CONTROLLER_H_
+#define CONTROLLER_H_
 
 #include <list>
 #include <string>
 #include "global.h"
 
-// 构造单态的，只公开run方法的Controler模块
 class Controler
 {
 public:
@@ -26,3 +26,5 @@ inline Controler& Controler::instance()
 	static Controler obj;
 	return obj;
 }
+
+#endif  // CONTROLLER_H_

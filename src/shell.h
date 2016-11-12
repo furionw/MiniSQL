@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SHELL_H_
+#define SHELL_H_
 
 #include <list>
 #include <string>
@@ -31,3 +32,5 @@ private:
 	static std::string m_tableName;
 	friend class Interpreter;
 };
+
+#endif  // SHELL_H_

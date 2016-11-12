@@ -1,4 +1,5 @@
-#pragma once
+#ifndef API_H_
+#define API_H_
 
 #include <string>
 #include <vector>
@@ -63,7 +64,7 @@ inline API& API::instance()
 	return obj;
 }
 
-
+#endif
 //	bool updateTuple(const std::string& tableName, const std::vector<std::string>& tuple);
 //	bool addAttribute(const std::string& tableName, const Attribute& attr) {}  // additional
 //	bool dropAttribute(const std::string& tableName, const std::string& attrName) {} // additional

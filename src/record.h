@@ -1,6 +1,7 @@
-#pragma once
+#ifndef RECORD_H_
+#define RECORD_H_
 
-#include "../miniSQL/global.h"
+#include "global.h"
 #include "buffer.h"
 #include <vector>
 #include <string>
@@ -74,3 +75,5 @@ inline RecordMan& RecordMan::instance()
 	static RecordMan obj;
 	return obj;
 }
+
+#endif  // RECORD_H_

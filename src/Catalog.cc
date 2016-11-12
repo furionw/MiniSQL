@@ -33,17 +33,12 @@ void CatalogMan::loadTable()
 	in.close();
 }
 
-void CatalogMan::loadIndex()
-{
+void CatalogMan::loadIndex() {
 	ifstream in(M_DIR + "index", ios::binary);
 	string indexName, tableName, attrName;
-	while (true)
-	{
+	while (true) {
 		in >> tableName >> indexName >> attrName;
-		if ( in == false )
-		{
-			break;
-		}
+		if (!in.good()) break;
 		m_index.insert( make_pair(tableName, make_pair(indexName, attrName)) );
 	}
 	in.close();

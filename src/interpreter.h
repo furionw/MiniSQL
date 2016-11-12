@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INTERPRETER_H_
+#define INTERPRETER_H_
 
 #include "global.h"
 #include <string>
@@ -39,3 +40,5 @@ private:
 // show tables
 // desc tableName
 // show index from tableName;
+
+#endif  // INTERPRETER_H_

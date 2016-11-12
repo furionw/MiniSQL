@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BUFFER_H_
+#define BUFFER_H_
 
 #include <string>
 #include <map>
@@ -87,5 +88,4 @@ inline BufferMan& BufferMan::instance()
 	return obj;
 }
 
-
-
+#endif  // BUFFER_H_
