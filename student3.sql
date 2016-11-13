@@ -1,9 +1,9 @@
 create table student3 (
-		sno char(8),
-		sname char(16) unique,
-		sage int,
-		sgender char (1),
-		primary key (sno)
+    sno char(8),
+    sname char(16) unique,
+    sage int,
+    sgender char (1),
+    primary key (sno)
 );
 
 insert into student3 values ('12345678',
