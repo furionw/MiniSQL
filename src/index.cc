@@ -6,61 +6,53 @@ using namespace std;
 const string IndexMan::M_DIR = "index/";
 
 void IndexMan::insertIndex(const string& tableName, 
-               const Attribute& attr, const vector<pair<string, int>>& info) const
-{
-  switch( attr.m_type )
-  {
-    case DATA_TYPE::INT:
-    {
-      BPlusTree<int> tree(M_DIR + tableName + string("@") + attr.m_name, attr);
-      return treeInsert<int>( tree, info );  
+    const Attribute& attr, const vector<pair<string, int>>& info) const {
+  switch(attr.m_type) {
+    case DATA_TYPE::INT: {
+      return treeInsert<int>(BPlusTree<int>(M_DIR + tableName + string("@")
+          + attr.m_name, attr), info);
     }
-    case DATA_TYPE::CHAR:
-    {
-      BPlusTree<string> tree(M_DIR + tableName + string("@") + attr.m_name, attr);
-      return treeInsert<string>( tree, info );
+    case DATA_TYPE::CHAR: {
+      return treeInsert<string>(BPlusTree<string>(M_DIR + tableName + string("@")
+          + attr.m_name, attr), info);
     }
-    case DATA_TYPE::FLOAT:
-    {
-      BPlusTree<float> tree(M_DIR + tableName + string("@") + attr.m_name, attr);
-      return treeInsert<float>( tree, info );
+    case DATA_TYPE::FLOAT: {
+      return treeInsert<float>(BPlusTree<float>(M_DIR + tableName + string("@")
+          + attr.m_name, attr), info);
     }
+    default:
+      assert(false);
   }
 }
 
 void IndexMan::deleteIndex(const string& tableName, 
-               const Attribute& attr, const vector<pair<string, int>>& info) const
-{
-  switch( attr.m_type )
-  {
-    case DATA_TYPE::INT:
-    {
-      BPlusTree<int> tree(M_DIR + tableName + string("@") + attr.m_name, attr);
-      return treeRemove<int>(tree, info);
+    const Attribute& attr, const vector<pair<string, int>>& info) const {
+  switch(attr.m_type) {
+    case DATA_TYPE::INT: {
+      return treeRemove<int>(BPlusTree<int>(M_DIR + tableName + string("@")
+          + attr.m_name, attr), info);
     }
-    case DATA_TYPE::CHAR:
-    {
-      BPlusTree<string> tree(M_DIR + tableName + string("@") + attr.m_name, attr);
-      return treeRemove<string>(tree, info);
+    case DATA_TYPE::CHAR: {
+      return treeRemove<string>(BPlusTree<string>(M_DIR + tableName + string("@")
+          + attr.m_name, attr), info);
     }
-    case DATA_TYPE::FLOAT:
-    {
-      BPlusTree<float> tree(M_DIR + tableName + string("@") + attr.m_name, attr);
-      return treeRemove<float>(tree, info);
+    case DATA_TYPE::FLOAT: {
+      return treeRemove<float>(BPlusTree<float>(M_DIR + tableName + string("@")
+          + attr.m_name, attr), info);
     }
+    default:
+      assert(false);
   }
 }
 
-void IndexMan::dropIndex(const string& tableName, const vector<string>& vtAttrName) const
-{
+void IndexMan::dropIndex(const string& tableName,
+    const vector<string>& vtAttrName) const {
   for(auto it = vtAttrName.begin(); it != vtAttrName.end(); it ++)
-  {
     BufferMan::instance().remove(M_DIR + tableName + string("@") + *it);
-  }
 }
 
-void IndexMan::dropIndex(const string& tableName, const string& attrName) const
-{
+void IndexMan::dropIndex(const string& tableName, const string& attrName)
+    const {
   BufferMan::instance().remove(M_DIR + tableName + "@" + attrName);
 }
 
@@ -126,37 +118,3 @@ void IndexMan::print(const std::string& tableName, const Attribute& attr) const
     }
   }  
 }
-
-/*
-void IndexMan::createIndex(const std::string& tableName, const vector<Attribute>& vtAttr) const
-{
-  for (auto it = vtAttr.begin(); it != vtAttr.end(); it ++)
-  {
-    if (it -> isUnique() || it -> isIndex() || it -> isPrimary() )
-    {
-      switch( it -> m_type )
-      {
-        case DATA_TYPE::INT:
-        {
-          BPlusTree<int> intTree(M_DIR + tableName + string("@") + it -> m_name, *it);
-        }
-        case DATA_TYPE::CHAR:
-        {
-          BPlusTree<string> charTree(M_DIR + tableName + string("@") + it -> m_name, *it);
-        }
-        case DATA_TYPE::FLOAT:
-        {
-          BPlusTree<float> floatTree(M_DIR + tableName + string("@") + it -> m_name, *it);
-        }
-      }
-    }
-  }
-}
-
-void IndexMan::createIndex(const std::string& tableName, Attribute& attr) const // call by API::createIndex
-{
-  vector<Attribute> arg;
-  attr.setIndex();
-  arg.push_back(attr);
-  createIndex(tableName, arg);
-}*/
