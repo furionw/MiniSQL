@@ -65,7 +65,7 @@ private:
   void onCreateIndex(const std::vector< std::pair<std::string, int> >& info) const; // called by ctor
   Node fetchRootFromFile() const;
 
-  bool isEqual(const KEY& a, const KEY& b) const { return a == b; }  
+  bool isEqual(const KEY& a, const KEY& b) const { return a == b; }
   bool isLastLeaf(const Node& node) const { return (node.m_last == M_ROOT_NUM); }
   bool hasKey(const Node& node, const KEY& key) const;
 
@@ -155,13 +155,13 @@ private:
 // template specialization
 template<>
 inline bool BPlusTree<float>::isEqual(const float& a, const float& b) const {
-  return fabs(a-b)<M_EPS;
+  return fabs(a-b) < M_EPS;
 }
 
 template<>
 inline bool BPlusTree<std::string>::isEqual(const std::string& a,
     const std::string& b) const {
-  return (strcmp(a.c_str(), b.c_str())==0);
+  return strcmp(a.c_str(), b.c_str()) == 0;
 }
 
 template<typename KEY>
